@@ -1,6 +1,7 @@
 console.log(
   "Task 9 ------------------------------------------------------------"
 );
+// Users array
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -87,12 +88,12 @@ const users = [
     age: 39,
   },
 ];
-// Write code under this line
+
 const getNamesSortedByFriendsCount = (array) =>
   array
     .slice()
     .sort((a, b) => a.friends.length - b.friends.length)
     .map(({ name }) => name);
 
-// console.log(getNamesSortedByFriendsCount(users));
+console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
