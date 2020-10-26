@@ -1,6 +1,7 @@
 console.log(
   "Task 8 ------------------------------------------------------------"
 );
+// Users array
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -88,14 +89,13 @@ const users = [
   },
 ];
 
-// Write code under this line
 const getUsersWithFriend = (array, friendName) =>
   array
     .filter(({ friends }) => friends.includes(friendName))
     .map(({ name }) => name);
 
-// console.log(getUsersWithFriend(users, 'Briana Decker'));
+console.log(getUsersWithFriend(users, "Briana Decker"));
 // [ 'Sharlene Bush', 'Sheree Anthony' ]
 
-// console.log(getUsersWithFriend(users, 'Goldie Gentry'));
+console.log(getUsersWithFriend(users, "Goldie Gentry"));
 // [ 'Elma Head', 'Sheree Anthony' ]
