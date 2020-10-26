@@ -1,6 +1,7 @@
 console.log(
   "Task 3 ------------------------------------------------------------"
 );
+// Users array
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -88,11 +89,10 @@ const users = [
   },
 ];
 
-// Write code under this line
-const getUsersWithGender = (array, gender) => array.filter((user) => user.gender === gender).map(({name}) => name);
+const getUsersWithGender = (array, gender) =>
+  array.filter((user) => user.gender === gender).map(({ name }) => name);
 
-// console.log(getUsersWithGender(users, 'male'));
-
+console.log(getUsersWithGender(users, "male"));
 /* [
   "Moore Hensley",
   "Ross Vazquez",  
