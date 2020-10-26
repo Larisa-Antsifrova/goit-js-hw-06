@@ -1,6 +1,7 @@
 console.log(
   "Task 7 ------------------------------------------------------------"
 );
+// Users array
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -87,9 +88,9 @@ const users = [
     age: 39,
   },
 ];
-// Write code under this line
+
 const calculateTotalBalance = (array) =>
   array.reduce((total, { balance }) => total + balance, 0);
 
-// console.log(calculateTotalBalance(users));
+console.log(calculateTotalBalance(users));
 // 20916
