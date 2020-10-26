@@ -1,6 +1,7 @@
 console.log(
   "Task 10 ------------------------------------------------------------"
 );
+// Users array
 const users = [
   {
     id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
@@ -88,7 +89,6 @@ const users = [
   },
 ];
 
-// Write code under this line
 const getSortedUniqueSkills = (array) =>
   array
     .reduce((allSkills, { skills }) => [...allSkills, ...skills], [])
